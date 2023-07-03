@@ -27,6 +27,11 @@
 				if (this.curTeam.format.includes('bdsp')) {
 					this.curTeam.dex = Dex.mod('gen8bdsp');
 				}
+				if (this.curTeam.format.includes('okl')) {
+					console.log('OKL - focus function');
+					this.curTeam.dex = Dex.mod(this.curTeam.format);
+					console.log(this.curTeam.dex);
+				}
 				Storage.activeSetList = this.curSetList;
 			}
 		},
@@ -695,6 +700,11 @@
 			}
 			if (this.curTeam.format.includes('bdsp')) {
 				this.curTeam.dex = Dex.mod('gen8bdsp');
+			}
+			if (this.curTeam.format.includes('okl')) {
+				console.log('OKL - edit function');
+				this.curTeam.dex = Dex.mod(this.curTeam.format);
+				console.log(this.curTeam.dex);
 			}
 			Storage.activeSetList = this.curSetList = Storage.unpackTeam(this.curTeam.team);
 			this.curTeamIndex = i;
@@ -1490,6 +1500,11 @@
 			}
 			if (this.curTeam.format.includes('bdsp')) {
 				this.curTeam.dex = Dex.mod('gen8bdsp');
+			}
+			if (this.curTeam.format.includes('okl')) {
+				console.log('OKL - changeFormat function');
+				this.curTeam.dex = Dex.mod(this.curTeam.format);
+				console.log(this.curTeam.dex);
 			}
 			this.save();
 			if (this.curTeam.gen === 5 && !Dex.loadedSpriteData['bw']) Dex.loadSpriteData('bw');
