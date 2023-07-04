@@ -352,3 +352,23 @@
 .utilichart .ppsortcol {
 	width: 23px;
 }
+
+
+/* ----- OKL Styles ----- */
+
+.utilichart .result.tier-search-tip {
+	height: 24px;
+}
+.utilichart .result.tier-search-tip small {
+	padding: 5px 55px 5px 25px;
+	display: block;
+}
+.utilichart .result.stickyheader {
+	position: sticky;
+	top: 0;
+	height: auto;
+	z-index: 999;
+}
+.utilichart .result.stickyheader h3 {
+	margin-top: 0;
+}

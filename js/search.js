@@ -203,7 +203,7 @@
 					headerText = 'Section C (5-1 points)';
 					break;
 			}
-			return '<li class="result"><h3>' + headerText + '</h3></li>';
+			return '<li class="result stickyheader"><h3>' + headerText + '</h3></li>';
 		case 'sortpokemon':
 			return this.renderPokemonSortRow();
 		case 'sortmove':
@@ -288,8 +288,8 @@
 		buf += '<button class="sortcol statsortcol' + (this.sortCol === 'bst' ? ' cur' : '') + '" data-sort="bst">BST</button>';
 		buf += '</div></li>';
 
-		buf += '<li class="result" style="height: 24px;">';
-		buf += '<small style="padding: 5px 25px; display: block;">';
+		buf += '<li class="result tier-search-tip">';
+		buf += '<small>';
 		buf += 'Tip: Use the "OU" filter for Section A mons, "UU" filter for Section B mons, and "RU" filter for Section C mons.';
 		buf += '</small>';
 		buf += '</li>';
