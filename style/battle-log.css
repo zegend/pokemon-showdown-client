@@ -652,3 +652,29 @@ blink {
 	animation-duration: 1s;
 	text-decoration: none;
 }
+
+
+/* OKL Styles */
+
+@keyframes changeBorderColor {
+  0% {
+    border-color: #7ed37a;
+  }
+
+  50% {
+    border-color: #66a7da;
+  }
+
+  100% {
+    border-color: #7ed37a;
+  }
+}
+
+.button[name="saveReplay"] {
+	border: 3px solid;
+	font-weight: 600;
+	animation: changeBorderColor ease;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-fill-mode: both;
+}
