@@ -310,7 +310,7 @@
 		// number
 		var tier = this.engine ? this.engine.getTier(pokemon) : pokemon.num;
 		// buf += '<span class="col numcol">' + (pokemon.num >= 0 ? pokemon.num : 'CAP') + '</span> ';
-		let tierText = 'X';
+		let tierText = '-';
 		switch (tier) {
 			case 'OU':
 				tierText = 'A';
