@@ -191,7 +191,7 @@
 		case 'html':
 			return '<li class="result">' + id + '</li>';
 		case 'header':
-			let headerText = 'Not Available';
+			let headerText = id;
 			switch (id) {
 				case 'OU':
 					headerText = 'Section A (14-11 points)';
