@@ -191,7 +191,7 @@
 		case 'html':
 			return '<li class="result">' + id + '</li>';
 		case 'header':
-			let headerText = 'Unrecognised Section';
+			let headerText = 'Not Available';
 			switch (id) {
 				case 'OU':
 					headerText = 'Section A (14-11 points)';
@@ -310,7 +310,7 @@
 		// number
 		var tier = this.engine ? this.engine.getTier(pokemon) : pokemon.num;
 		// buf += '<span class="col numcol">' + (pokemon.num >= 0 ? pokemon.num : 'CAP') + '</span> ';
-		let tierText = '?';
+		let tierText = 'X';
 		switch (tier) {
 			case 'OU':
 				tierText = 'A';
