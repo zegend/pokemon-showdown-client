@@ -191,7 +191,19 @@
 		case 'html':
 			return '<li class="result">' + id + '</li>';
 		case 'header':
-			return '<li class="result"><h3>' + id + '</h3></li>';
+			let headerText = 'Unrecognised Section';
+			switch (id) {
+				case 'OU':
+					headerText = 'Section A (14-11 points)';
+					break;
+				case 'UU':
+					headerText = 'Section B (10-6 points)';
+					break;
+				case 'RU':
+					headerText = 'Section C (5-1 points)';
+					break;
+			}
+			return '<li class="result"><h3>' + headerText + '</h3></li>';
 		case 'sortpokemon':
 			return this.renderPokemonSortRow();
 		case 'sortmove':
@@ -298,7 +310,19 @@
 		// number
 		var tier = this.engine ? this.engine.getTier(pokemon) : pokemon.num;
 		// buf += '<span class="col numcol">' + (pokemon.num >= 0 ? pokemon.num : 'CAP') + '</span> ';
-		buf += '<span class="col numcol">' + tier + '</span> ';
+		let tierText = '?';
+		switch (tier) {
+			case 'OU':
+				tierText = 'A';
+				break;
+			case 'UU':
+				tierText = 'B';
+				break;
+			case 'RU':
+				tierText = 'C';
+				break;
+		}
+		buf += '<span class="col numcol">' + tierText + '</span> ';
 
 		// icon
 		buf += '<span class="col iconcol">';
