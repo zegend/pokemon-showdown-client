@@ -270,7 +270,7 @@
 		return 'Error: not found';
 	};
 	Search.prototype.renderPokemonSortRow = function () {
-		var buf = '<li class="result"><div class="sortrow">';
+		var buf = '<li class="result" style="height: auto"><div class="sortrow">';
 		buf += '<button class="sortcol numsortcol' + (!this.sortCol ? ' cur' : '') + '">' + (!this.sortCol ? 'Sort: ' : this.engine.firstPokemonColumn) + '</button>';
 		buf += '<button class="sortcol pnamesortcol' + (this.sortCol === 'name' ? ' cur' : '') + '" data-sort="name">Name</button>';
 		buf += '<button class="sortcol typesortcol' + (this.sortCol === 'type' ? ' cur' : '') + '" data-sort="type">Types</button>';
@@ -287,6 +287,13 @@
 		buf += '<button class="sortcol statsortcol' + (this.sortCol === 'spe' ? ' cur' : '') + '" data-sort="spe">Spe</button>';
 		buf += '<button class="sortcol statsortcol' + (this.sortCol === 'bst' ? ' cur' : '') + '" data-sort="bst">BST</button>';
 		buf += '</div></li>';
+
+		buf += '<li class="result" style="height: 24px;">';
+		buf += '<small style="padding: 5px 25px; display: block;">';
+		buf += 'Tip: Use the "OU" filter for Section A mons, "UU" filter for Section B mons, and "RU" filter for Section C mons.';
+		buf += '</small>';
+		buf += '</li>';
+
 		return buf;
 	};
 	Search.prototype.renderMoveSortRow = function () {
