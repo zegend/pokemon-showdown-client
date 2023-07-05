@@ -1,11 +1,11 @@
-Pokémon Showdown Client
+Pokémon Showdown (Client) - OKL Fork
 ========================================================================
 
-Navigation: [Website][1] | [Server repository][2] | **Client repository** | [Dex repository][3]
+Navigation: [OKL Server repository][1] | **OKL Client repository** | [Original Server repository][2] | [Original Client repository][3]
 
-  [1]: http://pokemonshowdown.com/
-  [2]: https://github.com/Zarel/Pokemon-Showdown
-  [3]: https://github.com/Zarel/Pokemon-Showdown-Dex
+  [1]: https://github.com/zegend/pokemon-showdown
+  [2]: https://github.com/smogon/pokemon-showdown
+  [3]: https://github.com/smogon/pokemon-showdown-client
 
 Introduction
 ------------------------------------------------------------------------
