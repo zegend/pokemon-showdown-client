@@ -1,6 +1,6 @@
 {
-    "root": "pokemonshowdown.com",
-    "client": "play.pokemonshowdown.com",
+    "root": "oddkeystone.com/pokemon-showdown-client",
+    "client": "oddkeystone.com/pokemon-showdown-client",
     "dex": "dex.pokemonshowdown.com",
     "replays": "replay.pokemonshowdown.com",
     "users": "pokemonshowdown.com/users"
