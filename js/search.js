@@ -383,7 +383,7 @@
 					buf += '<span class="col abilitycol">' + abilities['0'] + '</span>';
 				}
 				var unreleasedHidden = pokemon.unreleasedHidden;
-				if (unreleasedHidden === 'Past' && (this.mod === 'natdex' || gen < 8)) unreleasedHidden = false;
+				if (unreleasedHidden === 'Past' && (this.mod === 'natdex' || this.mod.includes('okls5') || gen < 8)) unreleasedHidden = false;
 				if (abilities['S']) {
 					if (abilities['H']) {
 						buf += '<span class="col twoabilitycol' + (unreleasedHidden ? ' unreleasedhacol' : '') + '">' + (abilities['H'] || '') + '<br />(' + abilities['S'] + ')</span>';
